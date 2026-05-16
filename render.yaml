@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aura-server
+    env: node
+    buildCommand: npm install && npx playwright install chromium --with-deps
+    startCommand: node server.js
+    envVars:
+      - key: AURA_SECRET
+        generateValue: true
+      - key: PORT
+        value: 3001

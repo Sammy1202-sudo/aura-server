@@ -1,0 +1,15 @@
+{
+  "name": "aura-server",
+  "version": "1.0.0",
+  "description": "AURA Playwright automation server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "install-browsers": "npx playwright install chromium --with-deps"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "playwright": "^1.44.0",
+    "cors": "^2.8.5"
+  }
+}
